@@ -1,0 +1,31 @@
+<?php
+    require_once '../../vendor/autoload.php';
+    $faker = Faker\Factory::create();
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Blog</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>E-Mail</th>
+                <th>Text</th>
+            </tr>
+
+            <?php
+            for($i = 1; $i <= 10; $i++) {
+                ?>
+                <tr>
+                    <td><?php echo $faker->name; ?></td>
+                    <td><?php echo $faker->unique()->email; ?></td>
+                    <td><?php echo $faker->optional(.56)->text(150); ?></td>
+                </tr>
+            <?php } ?>
+        </table>
+    </body>
+</html>

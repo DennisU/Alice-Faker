@@ -1,0 +1,15 @@
+{
+    "name": "dennis/alice-faker",
+    "require": {
+        "fzaninotto/faker": "^1.6"
+    },
+    "autoload": {
+        "classmap": ["example"]
+    },
+    "authors": [
+        {
+            "name": "DennisU",
+            "email": "dennis.ungelbach@flagbit.de"
+        }
+    ]
+}
