@@ -1,7 +1,8 @@
 {
     "name": "dennis/alice-faker",
     "require": {
-        "fzaninotto/faker": "^1.6"
+        "fzaninotto/faker": "1.*",
+        "nelmio/alice": "*"
     },
     "autoload": {
         "classmap": ["example"]
