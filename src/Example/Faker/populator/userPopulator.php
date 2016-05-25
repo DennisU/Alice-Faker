@@ -18,6 +18,8 @@ $conf = array(
     "memory" => "~"
 );
 
+//TODO doctrine error "It's a requirement to specify a Metadata Driver and pass it to Doctrine\ORM\Configuration::setMetadataDriverImpl()"
+
 $entityManager = \Doctrine\ORM\EntityManager::create($conf, $configuration);
 
 $populator = new Faker\ORM\Doctrine\Populator($faker, $entityManager);
